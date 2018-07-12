@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="9dp"
+    android:padding="15dp"
+    android:elevation="15dp"
+    app:cardElevation="17dp"
+    android:layout_marginTop="7dp"
+    android:layout_marginRight="9dp"
+    android:layout_marginLeft="9dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/blog_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textSize="20sp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/name"/>
+
+        <TextView
+            android:id="@+id/blog_date"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_below="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:layout_toRightOf="@+id/desc"/>
+
+        <TextView
+            android:id="@+id/country"
+            android:layout_below="@+id/blog_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Country"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/comma1"
+            android:layout_below="@+id/blog_user_name"
+            android:layout_toRightOf="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" , "
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_below="@+id/blog_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Age"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/comma1"/>
+
+        <TextView
+            android:id="@+id/comma2"
+            android:layout_below="@+id/blog_user_name"
+            android:layout_toRightOf="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" , "
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_below="@+id/blog_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/comma2"/>
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_below="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/opinion"
+            android:layout_below="@+id/country"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Opinion"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_below="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Desc"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_margin="5dp" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

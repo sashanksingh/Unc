@@ -1,92 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@mipmap/background"
     tools:context=".HomeActivity">
 
-
-
+    <include layout="@layout/app_bar_layout" android:id="@+id/main_toolbar"/>
 
     <android.support.design.widget.FloatingActionButton
-
         android:id="@+id/floating_button"
         android:layout_width="@dimen/design_fab_size_normal"
         android:layout_height="@dimen/design_fab_size_normal"
-        android:layout_marginEnd="4dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="524dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
         android:clickable="true"
         android:focusable="true"
-        android:scaleType="center"
+        android:src="@drawable/ic_add_black_24dp"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:layout_gravity="bottom|right|end" />
+
+    <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/main_toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?android:attr/actionBarSize"-->
+        <!--android:background="@color/colorPrimaryDark"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/main_container"-->
+        <!--app:popupTheme="@style/ThemeOverlay.AppCompat.Light"-->
+        <!--app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">-->
 
 
-        android:src="@drawable/add"
-        app:backgroundTint="@color/darkOrange"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <!--<android.support.constraint.ConstraintLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/main_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?android:attr/actionBarSize"
-        android:background="@color/darkOrange"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="67dp">
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
-        app:titleTextAppearance="@style/Toolbar.TitleText" >
+            <!--<TextView-->
 
+                <!--android:id="@+id/textView"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:fontFamily="sans-serif"-->
+                <!--android:text="@string/speak"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="33dp"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toStartOf="@+id/imageView"-->
+                <!--app:layout_constraintHorizontal_bias="0.0"-->
+                <!--app:layout_constraintStart_toStartOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent"-->
+                <!--app:layout_constraintVertical_bias="0.545" />-->
 
-        <android.support.constraint.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            <!--<ImageView-->
 
-            <TextView
+                <!--android:id="@+id/imageView"-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:layout_alignParentEnd="true"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:src="@drawable/mail"-->
+                <!--android:tint="@color/white"-->
+                <!--app:layout_constraintBottom_toBottomOf="parent"-->
+                <!--app:layout_constraintEnd_toEndOf="parent"-->
+                <!--app:layout_constraintTop_toTopOf="parent" />-->
 
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="0dp"
-                android:layout_marginTop="4dp"
-                android:fontFamily="sans-serif"
-                android:text="@string/speak"
-                android:textColor="@color/white"
-                android:textSize="33dp"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+        <!--</android.support.constraint.ConstraintLayout>-->
 
-            <ImageView
-
-                android:id="@+id/imageView"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="2dp"
-                android:layout_marginTop="4dp"
-                android:src="@drawable/mail"
-                android:tint="@color/white"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </android.support.constraint.ConstraintLayout>
-
-    </android.support.v7.widget.Toolbar>
+    <!--</android.support.v7.widget.Toolbar>-->
 
     <FrameLayout
         android:id="@+id/main_container"
-        android:layout_width="386dp"
-        android:layout_height="560dp"
-        android:background="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
     </FrameLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+</android.support.design.widget.CoordinatorLayout>
 

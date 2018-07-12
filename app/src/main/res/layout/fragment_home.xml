@@ -4,11 +4,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".HomeFragment"
-    android:background="@color/white">
+    android:background="@mipmap/background">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <include
+        android:id="@+id/main_toolbar"
+        layout="@layout/app_bar_layout" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/blog_list_view"
+        android:layout_below="@+id/main_toolbar"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    </RelativeLayout>
+
 </FrameLayout>
