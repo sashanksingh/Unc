@@ -4,7 +4,7 @@ import com.google.firebase.firestore.ServerTimestamp;
 import java.util.Date;
 
 public class BlogPost {
-    public String age,country,gender,message,name,title;
+    public String age,country,gender,message,name,title,opinion;
     public Date timestamp;
 
     public BlogPost()
@@ -12,7 +12,7 @@ public class BlogPost {
 
     }
 
-    public BlogPost(String age, String country, String gender, String message, String name, String title, Date timestamp) {
+    public BlogPost(String age, String country, String gender, String message, String name, String title, Date timestamp, String opinion) {
         this.age = age;
         this.country = country;
         this.gender = gender;
@@ -20,6 +20,15 @@ public class BlogPost {
         this.name = name;
         this.title = title;
         this.timestamp = timestamp;
+        this.opinion = opinion;
+    }
+
+    public String getOpinion() {
+        return opinion;
+    }
+
+    public void setOpinion(String opinion) {
+        this.opinion = opinion;
     }
 
     public String getAge() {
